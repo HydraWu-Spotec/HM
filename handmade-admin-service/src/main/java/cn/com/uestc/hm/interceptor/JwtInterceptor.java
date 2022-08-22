@@ -22,7 +22,6 @@ public class JwtInterceptor implements WebRequestInterceptor {
 
     @Override
     public void preHandle(WebRequest request) {
-        System.out.println(request.getHeader("authorization"));
     }
 
     @Override
