@@ -1,0 +1,8 @@
+server:
+  port: 5770
+  servlet:
+    context-path: /hm
+
+spring:
+  profiles:
+    active: dev

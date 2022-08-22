@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>cn.com.uestc</groupId>
+	<artifactId>handmade-hydra</artifactId>
+	<packaging>pom</packaging>
+	<version>1.0</version>
+	<name>handmade-hydra</name>
+
+	<modules>
+		<module>common</module>
+		<module>handmade-admin-service</module>
+	</modules>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.7.3</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<properties>
+		<mybatis-plus.version>3.5.1</mybatis-plus.version>
+		<hutool.version>5.8.5</hutool.version>
+		<swagger-starter.version>3.0.0</swagger-starter.version>
+		<jackson.version>2.13.3</jackson.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- MYBATIS PLUS -->
+			<dependency>
+				<groupId>com.baomidou</groupId>
+				<artifactId>mybatis-plus-boot-starter</artifactId>
+				<version>${mybatis-plus.version}</version>
+			</dependency>
+
+
+			<!-- hutool-all -->
+			<dependency>
+				<groupId>cn.hutool</groupId>
+				<artifactId>hutool-all</artifactId>
+				<version>${hutool.version}</version>
+			</dependency>
+
+			<!-- swagger-->
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-boot-starter</artifactId>
+				<version>${swagger-starter.version}</version>
+			</dependency>
+
+			<!-- jackson-databind -->
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-databind</artifactId>
+				<version>${jackson.version}</version>
+			</dependency>
+
+			<!-- jackson-core -->
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-core</artifactId>
+				<version>${jackson.version}</version>
+			</dependency>
+
+			<!-- jackson-annotations -->
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-annotations</artifactId>
+				<version>${jackson.version}</version>
+			</dependency>
+
+			<!-- jackson-datatype-jsr310 -->
+			<dependency>
+				<groupId>com.fasterxml.jackson.datatype</groupId>
+				<artifactId>jackson-datatype-jsr310</artifactId>
+				<version>${jackson.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>
