@@ -31,9 +31,8 @@ public class RoleTest {
 
     @Test
     void create() {
-
+        var adminResource = new AdminResource();
         for (int i = 1; i <= 64; i++) {
-            var adminResource = new AdminResource();
             adminResource.setName("Resource " + i);
             adminResource.setGroup((i / 31) + 1);
             adminResource.setFlagBit((i % 31));

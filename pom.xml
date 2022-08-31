@@ -21,7 +21,7 @@
 	</parent>
 
 	<properties>
-		<mybatis-plus.version>3.5.1</mybatis-plus.version>
+		<mybatis-plus.version>3.4.1</mybatis-plus.version>
 		<hutool.version>5.8.5</hutool.version>
 		<swagger-starter.version>3.0.0</swagger-starter.version>
 		<jackson.version>2.13.3</jackson.version>
